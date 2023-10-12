@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FormData</title>
+</head>
+<body>
+    <h1>Form Data</h1>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Id
+                </th>
+                <th>
+                    Name
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="inputData : ${inputDataList}">
+                <td th:text="${inputData.Id}"></td>
+                <td th:text="${inputData.textInput}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
